@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color:  rgb(16, 13, 233);
+    --light-color: rgb(12, 30, 80); 
+    --white-color: white;
+    --hover-color: grey;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: url("images/avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+
+
+h1 {
+    color: var(--primary-color);
+    text-align:left;
+    font-size: 40px;
+    margin: 2rem;
+}
+
+textarea {
+    width: 22%;
+    height: 18vh;
+    padding: 1%;
+    display: block;
+    margin: 3rem 20% 1rem;
+    opacity: 30%;
+    color: var(--primary-color);
+    border-style: none;
+    border-radius: 20px;
+    min-width: 210px
+}
+
+button {
+    margin: auto 20% 1rem;
+    padding: 0.5% 2%;
+    opacity: 60%;
+    color: var(--light-color);
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: var(--hover-color);
+    opacity: 80%;
+}
+
+#output {
+    border: 1px solid;
+    border-style: none;
+    border-radius: 20px;
+    background-color: white;
+    width: 22%;
+    height: 18vh;
+    margin: auto 24%;
+    color: var(--primary-color);
+    opacity: 30%;
+    padding: 1%;
+    display: block;
+    min-width: 210px;
+}
+
+.label {
+    margin: auto 22% 1rem;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.output-block {
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 2rem; 
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    border-radius: 20px;
+    color: var(--white-color);
+    padding: 0.5% 6%;
+    text-align: center;    
+}
+
+footer a {
+    color: var(--hover-color);
+    text-decoration: none;
+}
