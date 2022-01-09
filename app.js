@@ -7,9 +7,8 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/navi.json";
 
-const getTranslationURL = text => {
-    return `${serverURL}?text=${text}`;
-}
+const getTranslationURL = text => `${serverURL}?text=${text}`;
+
 
 const clickHandler = () => {
     var inputText = txtInput.value;
