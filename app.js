@@ -1,22 +1,22 @@
-var btnTranslator = document.querySelector("#btn-translate");
+const btnTranslator = document.querySelector("#btn-translate");
 
-var txtInput = document.querySelector("#txt-input");
+const txtInput = document.querySelector("#txt-input");
 
-var outputDiv = document.querySelector("#output");
+const outputDiv = document.querySelector("#output");
 
 
-var serverURL = "https://api.funtranslations.com/translate/navi.json";
+const serverURL = "https://api.funtranslations.com/translate/navi.json";
 
 const getTranslationURL = text => `${serverURL}?text=${text}`;
 
 
 const clickHandler = () => {
-    var inputText = txtInput.value;
+    let inputText = txtInput.value;
 
     fetch (getTranslationURL(inputText))
         .then(response => response.json())
         .then(json => {
-            var translatedText = json.contents.translated;
+            let translatedText = json.contents.translated;
             outputDiv.innerHTML = translatedText;
         })
 
