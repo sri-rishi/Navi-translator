@@ -7,11 +7,11 @@ var outputDiv = document.querySelector("#output");
 
 var serverURL = "https://api.funtranslations.com/translate/navi.json";
 
-function getTranslationURL(text) {
-    return serverURL + "?" + "text=" + text;
+const getTranslationURL = text => {
+    return `${serverURL}?text=${text}`;
 }
 
-function clickHandler() {
+const clickHandler = () => {
     var inputText = txtInput.value;
 
     fetch (getTranslationURL(inputText))
